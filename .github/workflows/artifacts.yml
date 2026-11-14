@@ -8,7 +8,7 @@ jobs:
     container: archlinux/archlinux:base-devel
     steps:
     - name: Install dependencies
-      run: pacman -Syu --needed --noconfirm git meson mingw-w64-gcc glslang
+      run: pacman -Syu --needed --noconfirm clang meson glslang git mingw-w64 wine base base-devel sed git tar curl wget bash gzip sudo file gawk grep bzip2 which pacman systemd findutils diffutils coreutils procps-ng util-linux xcb-util xcb-util-keysyms xcb-util-wm
     - name: Checkout code
       id: checkout-code
       uses: actions/checkout@v6
