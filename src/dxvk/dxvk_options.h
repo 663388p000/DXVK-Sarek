@@ -33,6 +33,9 @@ namespace dxvk {
     /// Enable unified image layout path
     bool enableUnifiedImageLayout = true;
 
+    /// Enable async pipelines
+    bool enableAsync = true;
+
     /// Enables pipeline lifetime tracking
     Tristate trackPipelineLifetime = Tristate::Auto;
 
